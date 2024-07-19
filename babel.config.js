@@ -8,6 +8,7 @@ module.exports = {
         alias: {
           '@components': './src/components',
           '@screens': './src/screens',
+          '@redux': './src/redux',
           '@entry': './src',
         },
       },

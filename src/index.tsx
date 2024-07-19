@@ -1,12 +1,15 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {WELCOME_TEXT} from '@env';
+import {ReduxProvider} from '@redux';
 
 export default () => {
   return (
-    <View style={styles.center}>
-      <Text>{WELCOME_TEXT}</Text>
-    </View>
+    <ReduxProvider>
+      <View style={styles.center}>
+        <Text>{WELCOME_TEXT}</Text>
+      </View>
+    </ReduxProvider>
   );
 };
 

@@ -1,13 +1,13 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import {WELCOME_TEXT} from '@env';
 import {ReduxProvider} from '@redux';
+import {getters} from '@config';
 
 export default () => {
   return (
     <ReduxProvider>
       <View style={styles.center}>
-        <Text>{WELCOME_TEXT}</Text>
+        <Text>{getters.getBaseUrl()}</Text>
       </View>
     </ReduxProvider>
   );

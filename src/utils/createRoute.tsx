@@ -1,6 +1,7 @@
 import {HttpMethods} from '@types';
-
-export default (path: string, method: HttpMethods) => ({
+const createRoute = (path: string, method: HttpMethods) => ({
   path,
   method,
 });
+
+export default createRoute;

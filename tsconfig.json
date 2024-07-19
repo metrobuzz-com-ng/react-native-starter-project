@@ -6,6 +6,10 @@
       "@components": ["src/components"],
       "@screens": ["src/screens"],
       "@redux": ["src/redux"],
+      "@config": ["src/config"],
+      "@constants": ["./src/constants"],
+      "@types": ["src/types"],
+      "@utils": ["src/utils"],
       "@entry": ["src"]
     }
   }
